@@ -420,7 +420,7 @@
 					}
 
 					value = amMoment.preprocessDate(value, preprocess);
-					var date = moment(value);
+					var date = moment.utc(value);
 					if (!date.isValid()) {
 						return '';
 					}
